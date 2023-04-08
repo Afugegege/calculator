@@ -15,8 +15,10 @@ var historyFormula = "";
 var historyDisplay ="";
 
 function clickBtn(number){
-    if(display === result && display != "0"){
-        alert(wrong)
+    var tempAns = $("#ans").html();
+    if(display == tempAns && display != undefined && display != 0){
+        clearAll();
+        $("#ans").html(tempAns);
     }
     if($("#formula").html() == "0"){
         display = "" + number;
@@ -90,8 +92,8 @@ function clickSpecialSymbol(symbol) {
 
 function calc() {
     var result = eval(calcFormula);
-    historyFormula += display;
-    historyAns +=  result ;
+    historyFormula = display;
+    historyAns =  result ;
     historyDisplay += historyFormula + " = " + historyAns + "<br>";
     $("#ans").html(result);
     display = result;
