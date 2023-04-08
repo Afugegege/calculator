@@ -9,10 +9,44 @@ var calcFormula = "";
 var displayOperator = "";
 var symbol ="";
 var lastElement = calcFormula[calcFormula.length -1];
-
 var historyAns = "";
 var historyFormula = "";
 var historyDisplay ="";
+var lang = "jap";
+var eng = "";
+var jap = "";
+
+$(document).ready(function(){
+    changeLangHTML();
+});
+
+function changeLang(language){
+    if (language == "english") {
+        lang = "eng";
+    } else {
+        lang = "jap";
+    }
+    changeLangHTML();
+}
+
+function changeLangHTML(){
+    if (lang == "jap") {
+        $("#clear").html("リセット");
+        $("#erase").html("消す");
+        $("#divide").html("わる");
+        $("#multiply").html("かける");
+        $("#minus").html("ひく");
+        $("#plus").html("たす");
+    } else {
+        $("#clear").html("CLEAR");
+        $("#erase").html("ERASE");
+        $("#divide").html("÷");
+        $("#multiply").html("×");
+        $("#minus").html("-");
+        $("#plus").html("+");
+    }
+};
+
 
 function clickBtn(number){
     var tempAns = $("#ans").html();
@@ -136,6 +170,15 @@ function erase(operator) {
     }
     
 }
+
+function clearHistory() {
+    var historyAns = "";
+    var historyFormula = "";
+    var historyDisplay ="";
+    $("#historyPanel").html(historyDisplay);
+}
+
+
 function calcgdm() {
     if (display == "78-2") {
         window.open("https://eacg.net/Comicplay/69737-1-22.html");

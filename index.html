@@ -20,14 +20,20 @@
       </nav>
     </div>
     <br>
-    <button type="button" class="btn btn-History btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      History
+    <button type="button" class="btn btn-Lang btn-primary" onclick="changeLang('english')">
+      ENG
     </button>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <button type="button" class="btn btn-Lang btn-primary" onclick="changeLang('japanese')">
+      JAP
+    </button>
+    <button type="button" class="btn btn-History btn-primary" data-bs-toggle="modal" data-bs-target="#historyModal">
+      HISTORY
+    </button>
+    <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">History</h1>
+            <h1 class="modal-title fs-5" id="historyModalLabel">History</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" id="historyPanel">
@@ -35,7 +41,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary" onclick="clearHistory()">Clear</button>
           </div>
         </div>
       </div>
@@ -47,28 +53,28 @@
     <div class="w-auto p-3">
     <div class="container text-center">
       <div class="row">
-        <div class="col func-btn-yellow" onclick="clearAll()">リセット</div>
-        <div class="col func-btn-yellow" onclick="erase()">消す</div>
-        <div class="col func-btn-blue" onclick="clickOperator('/')">わる</div>
+        <div class="col func-btn-yellow" onclick="clearAll()" id="clear"> </div>
+        <div class="col func-btn-yellow" onclick="erase()" id="erase"></div>
+        <div class="col func-btn-blue" onclick="clickOperator('/')" id="divide"></div>
         <div class="col gundam" onclick="calcgdm()">RX-78-2</div>
       </div>
       <div class="row">
         <div class="col" onclick="clickBtn(1)">1</div>
         <div class="col" onclick="clickBtn(2)">2</div>
         <div class="col" onclick="clickBtn(3)">3</div>
-        <div class="col func-btn-blue" onclick="clickOperator('*')">かける</div>
+        <div class="col func-btn-blue" onclick="clickOperator('*')" id="multiply"></div>
       </div>
       <div class="row">
         <div class="col" onclick="clickBtn(4)">4</div>
         <div class="col" onclick="clickBtn(5)">5</div>
         <div class="col" onclick="clickBtn(6)">6</div>
-        <div class="col func-btn-blue" onclick="clickOperator('-')">ひく</div>
+        <div class="col func-btn-blue" onclick="clickOperator('-')" id="minus"></div>
       </div>
       <div class="row">
         <div class="col" onclick="clickBtn(7)">7</div>
         <div class="col" onclick="clickBtn(8)">8</div>
         <div class="col" onclick="clickBtn(9)">9</div>
-        <div class="col func-btn-blue" onclick="clickOperator('+')">たす</div>
+        <div class="col func-btn-blue" onclick="clickOperator('+')" id="plus"></div>
       </div>
       <div class="row">
         <div class="col" onclick="clickSpecialSymbol('%')">%</div>
