@@ -9,6 +9,7 @@ var calcFormula = "";
 var displayOperator = "";
 var symbol ="";
 var lastElement = calcFormula[calcFormula.length -1];
+
 var historyAns = "";
 var historyFormula = "";
 var historyDisplay ="";
