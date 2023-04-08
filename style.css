@@ -1,0 +1,201 @@
+
+.calculator-bdy{
+    z-index: 0;
+    height: 100%;
+    background-image: url("https://www.asus.com/microsite/ASUS-X-GUNDAM/ph/websites/img/gundam/series-bg-m.jpg");
+
+    background-size: 100% auto ;
+    
+}
+.calculator-navbar{
+    background-color: rgb(255, 255, 255);
+    height: 4em;
+}
+
+.nav-txt{
+    background: -webkit-linear-gradient(140deg, #fa0100 40%,#276eda 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container{
+    background-color: rgb(32, 33, 36); 
+    padding: auto;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+@media all and (min-width:350px) and (max-width: 500px) {
+    .calculator-navbar{
+        background-color: rgb(255, 255, 255);
+        height: 4em;
+    }
+    .container{
+        background-color: rgb(255, 255, 255);
+        background-image: url("https://www.asus.com/microsite/ASUS-X-GUNDAM/ph/websites/img/gundam/line.png"); 
+        background-size: 80vw ; 
+        background-position-y: 30vw;
+        background-repeat: no-repeat;
+    
+    }
+    .col{
+        padding: 0.8em;
+        font-size: 1.3em;
+        font-weight: 800;
+        color: #6e6e6e;
+        height: auto;
+    }
+    .formula{
+        font-size: 1.4em;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        
+    }
+    .ans{
+        font-size: 1.2em;
+        font-weight: 500;
+        color: rgb(194, 224, 255);
+        padding-bottom: 0.5em;;
+    }
+    .navbar-brand{
+        color: white;
+        font-size: 1.5em;
+        font-weight:900; 
+    }
+    .calculator-display{
+        padding-top: 3em;
+        padding-right: 1.5em;
+        margin-bottom: -0.5em;;
+        width: 100%;
+        height: auto;
+        font-size: 1.5em;
+        text-align: right;
+    }
+  }
+  @media all and (min-width:1100px) and (max-width: 3500px) {
+    .calculator-navbar{
+        background-color: rgb(255, 255, 255);
+        height: auto;
+    }
+    .container{
+        background-color: rgb(255, 255, 255);
+        background-image: url("https://www.asus.com/microsite/ASUS-X-GUNDAM/ph/websites/img/gundam/line.png"); 
+        background-size: 50vw ; 
+        background-position-y: 5vw;
+        background-position-x: 10vw;
+        background-repeat: no-repeat;
+    
+    }
+    .col{
+        padding: 0.8em;
+        font-size: 1.8em;
+        font-weight: 800;
+        color: #6e6e6e;
+        height: auto;
+    }
+    .formula{
+        font-size: 2em;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        
+    }
+    .ans{
+        font-size: 1.6em;
+        font-weight: 500;
+        color: rgb(194, 224, 255);
+        padding-bottom: 0.5em;;
+    }
+    .navbar-brand{
+        color: white;
+        font-size: 2em;
+        font-weight:900; 
+    }
+    .calculator-display{
+        padding-top: 3em;
+        padding-right: 5em;
+        margin-bottom: -0.5em;;
+        width: 100%;
+        height: auto;
+        font-size: 1.5em;
+        text-align: right;
+    }
+  }
+  @media all and (min-width:500px) and (max-width: 1100px) {
+    .calculator-navbar{
+        background-color: rgb(255, 255, 255);
+        height: auto;
+    }
+    .container{
+        background-color: rgb(255, 255, 255);
+        background-image: url("https://www.asus.com/microsite/ASUS-X-GUNDAM/ph/websites/img/gundam/line.png"); 
+        background-size: 70vw ; 
+        background-position-y: 20vw;
+        background-position-x: 3vw;
+        background-repeat: no-repeat;
+    
+    }
+    .col{
+        padding: 0.8em;
+        font-size: 1.6em;
+        font-weight: 800;
+        color: #6e6e6e;
+        height: auto;
+    }
+    .formula{
+        font-size: 1.8em;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        
+    }
+    .ans{
+        font-size: 1.4em;
+        font-weight: 500;
+        color: rgb(194, 224, 255);
+        padding-bottom: 0.5em;;
+    }
+    .navbar-brand{
+        color: white;
+        font-size: 2em;
+        font-weight:900; 
+    }
+    
+    .calculator-display{
+        padding-top: 3em;
+        padding-right: 2em;
+        margin-bottom: -0.5em;;
+        width: 100%;
+        height: auto;
+        font-size: 1.5em;
+        text-align: right;
+    }
+  }
+
+
+  .btn-History{
+    z-index: 10;
+    margin-bottom: -8em;
+}
+
+.func-btn-blue{
+    background-color: rgb(39, 110, 218);
+    border: white 10px;
+    color: white;
+    font-weight: 800;
+}
+.func-btn-red{
+    background-color: rgb(250, 1, 0);
+    color: white;
+    font-weight: 800;
+}
+.func-btn-yellow{
+    background-color: rgb(249, 159, 0);
+    color: white;
+    font-weight: 800;
+}
+.gundam{
+    background-color: rgb(2, 61, 148);
+    margin: 0.1em;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: auto 100% ;
+}
