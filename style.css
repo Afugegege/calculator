@@ -71,6 +71,9 @@
         font-size: 1.5em;
         text-align: right;
     }
+    .gundam{
+        font-size: 1em;
+    }
     .btn-History{
         z-index: 10;
         margin-bottom: -5em;
@@ -97,6 +100,9 @@
         background-repeat: no-repeat;
     
     }
+    .btn{
+        border-radius: 0%;
+    }
     .col{
         padding: 0.8em;
         font-size: 1.8em;
@@ -104,6 +110,8 @@
         color: #6e6e6e;
         height: auto;
     }
+
+
     .formula{
         font-size: 2em;
         font-weight: 900;
@@ -132,15 +140,16 @@
     }
     .btn-History{
         z-index: 10;
-        margin-bottom: -8em;
+        margin-bottom: -7em;
         background-color: rgb(250, 1, 0);
         font-size: 1.2em;
     }
     
     .btn-Lang{
         z-index: 10;
-        margin-bottom: -8em;    
+        margin-bottom: -7em;    
         background-color: rgb(249, 159, 0);
+        font-size: 1.2em;
     }
   }
   @media all and (min-width:500px) and (max-width: 1100px) {
@@ -163,6 +172,54 @@
         font-weight: 800;
         color: #6e6e6e;
         height: auto;
+        border-radius: 0;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .col:after {
+        content: "";
+        background: #90EE90;
+        
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      
+      .col:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+      .button:after {
+        content: "";
+        background: #000000;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+    .gundam{
+        font-size: 1.5em;
     }
     .formula{
         font-size: 1.8em;
@@ -196,12 +253,14 @@
         z-index: 10;
         margin-bottom: -8em;
         background-color: rgb(250, 1, 0);
+        font-size: 1.1em;
     }
     
     .btn-Lang{
         z-index: 10;
         margin-bottom: -8em;    
         background-color: rgb(249, 159, 0);
+        font-size: 1.1em;
     }
   }
 
@@ -230,4 +289,14 @@
     color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-size: auto 100% ;
+    padding: 0.8em; 
+    font-weight: 800;
+    height: auto;
+    transition: width 2s, height 4s;
+
+}
+.gundam:active{
+    width: 400;
+    height: 200;
+    background-image: url("https://media.tenor.com/xmG7EFHW3gcAAAAC/gundam-rx78.gif");  
 }
