@@ -25,6 +25,7 @@
     height: auto;
     z-index: 3;
 }
+
 @media all and (min-width:350px) and (max-width: 500px) {
     .calculator-navbar{
         background-color: rgb(255, 255, 255);
@@ -36,7 +37,7 @@
         background-size: 80vw ; 
         background-position-y: 30vw;
         background-repeat: no-repeat;
-    
+        z-index: 
     }
     .col{
         padding: 0.8em;
@@ -74,6 +75,10 @@
     .gundam{
         font-size: 1em;
     }
+    .gundam:hover{
+        background-image: url("https://media.tenor.com/xmG7EFHW3gcAAAAC/gundam-rx78.gif");  
+    }
+    
     .btn-History{
         z-index: 10;
         margin-bottom: -5em;
@@ -84,6 +89,86 @@
         z-index: 10;
         margin-bottom: -5em;    
         background-color: rgb(249, 159, 0);
+    }
+  }
+  @media all and (min-width:500px) and (max-width: 1100px) {
+    .calculator-navbar{
+        background-color: rgb(255, 255, 255);
+        height: auto;
+    }
+    .container{
+        background-color: rgb(255, 255, 255);
+        background-image: url("https://www.asus.com/microsite/ASUS-X-GUNDAM/ph/websites/img/gundam/line.png"); 
+        background-size: 70vw ; 
+        background-position-y: 20vw;
+        background-position-x: 3vw;
+        background-repeat: no-repeat;
+        z-index: 1;
+    
+    }
+    .col{
+        padding: 0.8em;
+        font-size: 1.6em;
+        font-weight: 800;
+        color: #6e6e6e;
+        height: auto;
+        border-radius: 0;
+        text-align: center;
+        z-index: 2;
+    }
+    .ripple-btn{
+        font-size: 1em;
+        font-weight: 800;
+        color: #6e6e6e;
+        height: auto;
+        z-index: 2;
+    }
+
+    .gundam{
+        font-size: 1.5em;
+    }
+
+    
+    .formula{
+        font-size: 1.8em;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        
+    }
+    .ans{
+        font-size: 1.4em;
+        font-weight: 500;
+        color: rgb(194, 224, 255);
+        padding-bottom: 0.5em;;
+    }
+    .navbar-brand{
+        color: white;
+        font-size: 2em;
+        font-weight:900; 
+    }
+    
+    .calculator-display{
+        padding-top: 3em;
+        padding-right: 2em;
+        margin-bottom: -0.5em;;
+        width: 100%;
+        height: auto;
+        font-size: 1.5em;
+        text-align: right;
+    }
+
+    .btn-History{
+        z-index: 10;
+        margin-bottom: -8em;
+        background-color: rgb(250, 1, 0);
+        font-size: 1.1em;
+    }
+    
+    .btn-Lang{
+        z-index: 10;
+        margin-bottom: -8em;    
+        background-color: rgb(249, 159, 0);
+        font-size: 1.1em;
     }
   }
   @media all and (min-width:1100px) and (max-width: 3500px) {
@@ -98,7 +183,11 @@
         background-position-y: 5vw;
         background-position-x: 10vw;
         background-repeat: no-repeat;
+        z-index: 1;
     
+    }
+    .gundam:hover{
+        background-image: url("https://media.tenor.com/xmG7EFHW3gcAAAAC/gundam-rx78.gif");  
     }
     .btn{
         border-radius: 0%;
@@ -109,6 +198,14 @@
         font-weight: 800;
         color: #6e6e6e;
         height: auto;
+        z-index: 2;
+    }
+    .ripple-btn{
+        font-size: 1em;
+        font-weight: 800;
+        color: #6e6e6e;
+        height: 100%;
+        z-index: 2;
     }
 
 
@@ -152,117 +249,7 @@
         font-size: 1.2em;
     }
   }
-  @media all and (min-width:500px) and (max-width: 1100px) {
-    .calculator-navbar{
-        background-color: rgb(255, 255, 255);
-        height: auto;
-    }
-    .container{
-        background-color: rgb(255, 255, 255);
-        background-image: url("https://www.asus.com/microsite/ASUS-X-GUNDAM/ph/websites/img/gundam/line.png"); 
-        background-size: 70vw ; 
-        background-position-y: 20vw;
-        background-position-x: 3vw;
-        background-repeat: no-repeat;
-    
-    }
-    .col{
-        padding: 0.8em;
-        font-size: 1.6em;
-        font-weight: 800;
-        color: #6e6e6e;
-        height: auto;
-        border-radius: 0;
-        text-align: center;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
-        text-decoration: none;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    .col:after {
-        content: "";
-        background: #90EE90;
-        
-        position: absolute;
-        padding-top: 300%;
-        padding-left: 350%;
-        margin-left: -20px!important;
-        margin-top: -120%;
-        opacity: 0;
-        transition: all 0.8s
-      }
-      
-      .col:active:after {
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-        transition: 0s
-      }
-      .button:after {
-        content: "";
-        background: #000000;
-        display: block;
-        position: absolute;
-        padding-top: 300%;
-        padding-left: 350%;
-        margin-left: -20px!important;
-        margin-top: -120%;
-        opacity: 0;
-        transition: all 0.8s
-}
-
-.button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-    .gundam{
-        font-size: 1.5em;
-    }
-    .formula{
-        font-size: 1.8em;
-        font-weight: 900;
-        color: rgb(255, 255, 255);
-        
-    }
-    .ans{
-        font-size: 1.4em;
-        font-weight: 500;
-        color: rgb(194, 224, 255);
-        padding-bottom: 0.5em;;
-    }
-    .navbar-brand{
-        color: white;
-        font-size: 2em;
-        font-weight:900; 
-    }
-    
-    .calculator-display{
-        padding-top: 3em;
-        padding-right: 2em;
-        margin-bottom: -0.5em;;
-        width: 100%;
-        height: auto;
-        font-size: 1.5em;
-        text-align: right;
-    }
-
-    .btn-History{
-        z-index: 10;
-        margin-bottom: -8em;
-        background-color: rgb(250, 1, 0);
-        font-size: 1.1em;
-    }
-    
-    .btn-Lang{
-        z-index: 10;
-        margin-bottom: -8em;    
-        background-color: rgb(249, 159, 0);
-        font-size: 1.1em;
-    }
-  }
+  
 
 
 
@@ -288,15 +275,21 @@
     margin: 0.1em;
     color: rgb(255, 255, 255);
     background-repeat: no-repeat;
-    background-size: auto 100% ;
+    background-size: 100% auto ;
     padding: 0.8em; 
     font-weight: 800;
-    height: auto;
-    transition: width 2s, height 4s;
 
 }
-.gundam:active{
-    width: 400;
-    height: 200;
-    background-image: url("https://media.tenor.com/xmG7EFHW3gcAAAAC/gundam-rx78.gif");  
-}
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: rgb(238, 238, 238) radial-gradient(circle, transparent 1%, white 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: unset;
+    background-size: 100%;
+    transition: background 0s;
+  }

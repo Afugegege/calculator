@@ -183,10 +183,10 @@ function calcgdm() {
     if (display == "78-2") {
         window.open("https://eacg.net/Comicplay/69737-1-22.html");
     }
-    }
+}
+  
 
-    document.querySelectorAll('.col').forEach((cardRipple) => {
-        new mdb.Ripple(cardRipple, {
-          color: 'light'
-        })
-      });
+
+    
+
+    
